@@ -24,7 +24,6 @@ jobs:
           pwd
           ./gradlew testMigrate
       - name: Build with Gradle
-#        run: ./gradlew clean build -test
       run: |
           chmod 777 gradlew
           pwd
