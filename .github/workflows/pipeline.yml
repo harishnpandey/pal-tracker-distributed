@@ -24,10 +24,11 @@ jobs:
           pwd
           ./gradlew testMigrate
       - name: Build with Gradle
-        run: ./gradlew clean build
+        run: ./gradlew clean build -test
       run: |
           chmod 777 gradlew
           pwd
+           ./gradlew clean build
       - name: Publish allocations artifact
         uses: actions/upload-artifact@v1
         with:
